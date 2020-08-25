@@ -1,0 +1,34 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="student.Master.cs" Inherits="WebApplication12.Site2" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+        <style type="text/css">
+        .auto-style1 {
+            position: absolute;
+            top: 24px;
+            left: 352px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div>
+             <h1>STUDENT <asp:Button ID="Button1" runat="server" Text="logout" CssClass="auto-style1" OnClick="Button1_Click" /></h1>
+                        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Profile.aspx">Profile</asp:HyperLink><br />
+                        <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/p_status.aspx">Placement_status</asp:HyperLink><br />
+                        <asp:HyperLink ID="HyperLink4" runat="server">Registered_companies</asp:HyperLink><br />
+                        <asp:HyperLink ID="HyperLink5" runat="server">Resume</asp:HyperLink><br />
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/companies1.aspx">Companies</asp:HyperLink><br />
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
